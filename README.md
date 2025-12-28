@@ -83,6 +83,53 @@ The contact form uses Netlify Forms:
 - Form submissions appear in Netlify dashboard under "Forms"
 - No backend or additional configuration needed
 
+## Publishing Updates
+
+Once your site is deployed to Netlify, any changes you push to your Git repository will automatically trigger a new deployment.
+
+### Standard Workflow
+
+1. **Make your changes** to the code (edit content, update styles, etc.)
+
+2. **Test locally**
+   ```bash
+   npm run dev
+   # View at http://localhost:4321
+   ```
+
+3. **Build to verify**
+   ```bash
+   npm run build
+   # Ensure build succeeds without errors
+   ```
+
+4. **Commit and push**
+   ```bash
+   git add .
+   git commit -m "Description of your changes"
+   git push
+   ```
+
+5. **Netlify deploys automatically**
+   - Netlify detects the push and starts building
+   - Build typically takes 30-60 seconds
+   - Site updates automatically when build completes
+   - You'll receive email notifications if build fails
+
+### Checking Deployment Status
+
+- Visit your Netlify dashboard: https://app.netlify.com
+- Click on your site
+- View "Deploys" tab to see build logs and status
+- Each deploy shows commit message and build output
+
+### Rollback if Needed
+
+If something goes wrong:
+1. Go to Netlify dashboard → Deploys
+2. Find a previous successful deploy
+3. Click "Publish deploy" to rollback
+
 ## Customization
 
 ### Colors
