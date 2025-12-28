@@ -1,0 +1,51 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-white border-b border-gray-200">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="text-xl font-bold text-gray-900">
+        Marleysoft
+      </a>
+      <div class="flex space-x-8">
+        <a
+          href="/"
+          class:list={[
+            "hover:text-blue-600 transition-colors",
+            currentPath === "/" ? "text-blue-600 font-medium" : "text-gray-700"
+          ]}
+        >
+          Home
+        </a>
+        <a
+          href="/services"
+          class:list={[
+            "hover:text-blue-600 transition-colors",
+            currentPath === "/services" ? "text-blue-600 font-medium" : "text-gray-700"
+          ]}
+        >
+          Services
+        </a>
+        <a
+          href="/about"
+          class:list={[
+            "hover:text-blue-600 transition-colors",
+            currentPath === "/about" ? "text-blue-600 font-medium" : "text-gray-700"
+          ]}
+        >
+          About
+        </a>
+        <a
+          href="/contact"
+          class:list={[
+            "hover:text-blue-600 transition-colors",
+            currentPath === "/contact" ? "text-blue-600 font-medium" : "text-gray-700"
+          ]}
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
