@@ -3,18 +3,18 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer class="bg-gray-900 text-gray-300 mt-auto">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-4 md:mb-0">
-        <p class="text-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-center md:text-left">
+        <p class="text-xs sm:text-sm">
           &copy; {currentYear} Marleysoft. All rights reserved.
         </p>
       </div>
-      <div class="flex space-x-6">
-        <a href="/" class="text-sm hover:text-white transition-colors">Home</a>
-        <a href="/services" class="text-sm hover:text-white transition-colors">Services</a>
-        <a href="/about" class="text-sm hover:text-white transition-colors">About</a>
-        <a href="/contact" class="text-sm hover:text-white transition-colors">Contact</a>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <a href="/" class="text-xs sm:text-sm hover:text-white transition-colors py-2">Home</a>
+        <a href="/services" class="text-xs sm:text-sm hover:text-white transition-colors py-2">Services</a>
+        <a href="/about" class="text-xs sm:text-sm hover:text-white transition-colors py-2">About</a>
+        <a href="/contact" class="text-xs sm:text-sm hover:text-white transition-colors py-2">Contact</a>
       </div>
     </div>
   </div>
