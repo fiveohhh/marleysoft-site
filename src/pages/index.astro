@@ -9,22 +9,34 @@ import Layout from '../layouts/Layout.astro';
   <!-- Hero Section -->
   <section class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16 lg:py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Build Sustainable Firmware Systems
-        </h1>
-        <p class="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 text-blue-100">
-          Expert consulting in firmware architecture and development infrastructure — not just writing code.
-        </p>
-        <p class="text-base sm:text-lg text-blue-100 mb-6 sm:mb-8">
-          Specializing in IoT and connected products, with 15+ years of experience across medical, industrial, and consumer electronics.
-        </p>
-        <a
-          href="/contact"
-          class="inline-block bg-white text-blue-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center min-h-[48px] flex items-center justify-center"
-        >
-          Get in Touch
-        </a>
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+            Build Sustainable Firmware Systems
+          </h1>
+          <p class="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 text-blue-100">
+            Expert consulting in firmware architecture and development infrastructure — not just writing code.
+          </p>
+          <p class="text-base sm:text-lg text-blue-100 mb-6 sm:mb-8">
+            Specializing in IoT and connected products, with 15+ years of experience across medical, industrial, and consumer electronics.
+          </p>
+          <a
+            href="/contact"
+            class="inline-block bg-white text-blue-900 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center min-h-[48px] flex items-center justify-center"
+          >
+            Get in Touch
+          </a>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hidden lg:block">
+          <img
+            src="/images/hero-embedded-systems.jpg"
+            alt="Embedded systems and circuit boards"
+            class="rounded-lg shadow-2xl w-full h-auto object-cover"
+          />
+        </div>
       </div>
     </div>
   </section>
