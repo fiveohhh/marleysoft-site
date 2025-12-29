@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
+  <defs>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C67B4E"/>
+      <stop offset="100%" style="stop-color:#8B5A3C"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Company Name -->
+  <text x="10" y="38" 
+        font-family="'Segoe UI', 'SF Pro Display', -apple-system, sans-serif" 
+        font-size="38" 
+        font-weight="600" 
+        fill="#1A202C"
+        letter-spacing="-0.5">
+    <tspan fill="#2D3748">marley</tspan><tspan fill="url(#accentGradient)">soft</tspan>
+  </text>
+  
+  <!-- Tagline -->
+  <text x="10" y="55" 
+        font-family="'Segoe UI', 'SF Pro Display', -apple-system, sans-serif" 
+        font-size="11" 
+        font-weight="400" 
+        fill="#718096"
+        letter-spacing="2">
+    SOFTWARE SOLUTIONS
+  </text>
+</svg>

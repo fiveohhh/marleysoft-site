@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #2D3748;
+  --color-brand-charcoal: #1A202C;
+  --color-brand-copper: #C67B4E;
+  --color-brand-copper-dark: #8B5A3C;
+  --color-brand-gray: #718096;
+  --color-brand-copper-light: #D4956B;
+  --color-brand-dark-50: #F7F8F9;
+  --color-brand-dark-100: #E8EAED;
+}

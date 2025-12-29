@@ -5,8 +5,8 @@ const currentPath = Astro.url.pathname;
 <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
   <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <a href="/" class="text-xl font-bold text-gray-900">
-        Marleysoft
+      <a href="/" class="flex items-center">
+        <img src="/images/logo.svg" alt="Marleysoft" class="h-12 w-auto" />
       </a>
 
       <!-- Desktop Navigation -->
@@ -14,8 +14,8 @@ const currentPath = Astro.url.pathname;
         <a
           href="/"
           class:list={[
-            "hover:text-blue-600 transition-colors",
-            currentPath === "/" ? "text-blue-600 font-medium" : "text-gray-700"
+            "hover:text-brand-copper transition-colors",
+            currentPath === "/" ? "text-brand-copper font-medium" : "text-gray-700"
           ]}
         >
           Home
@@ -23,8 +23,8 @@ const currentPath = Astro.url.pathname;
         <a
           href="/services"
           class:list={[
-            "hover:text-blue-600 transition-colors",
-            currentPath === "/services" ? "text-blue-600 font-medium" : "text-gray-700"
+            "hover:text-brand-copper transition-colors",
+            currentPath === "/services" ? "text-brand-copper font-medium" : "text-gray-700"
           ]}
         >
           Services
@@ -32,8 +32,8 @@ const currentPath = Astro.url.pathname;
         <a
           href="/about"
           class:list={[
-            "hover:text-blue-600 transition-colors",
-            currentPath === "/about" ? "text-blue-600 font-medium" : "text-gray-700"
+            "hover:text-brand-copper transition-colors",
+            currentPath === "/about" ? "text-brand-copper font-medium" : "text-gray-700"
           ]}
         >
           About
@@ -41,8 +41,8 @@ const currentPath = Astro.url.pathname;
         <a
           href="/contact"
           class:list={[
-            "hover:text-blue-600 transition-colors",
-            currentPath === "/contact" ? "text-blue-600 font-medium" : "text-gray-700"
+            "hover:text-brand-copper transition-colors",
+            currentPath === "/contact" ? "text-brand-copper font-medium" : "text-gray-700"
           ]}
         >
           Contact
@@ -52,7 +52,7 @@ const currentPath = Astro.url.pathname;
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+        class="md:hidden p-2 rounded-md text-gray-700 hover:text-brand-copper hover:bg-gray-100 transition-colors"
         aria-label="Toggle menu"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ const currentPath = Astro.url.pathname;
           href="/"
           class:list={[
             "py-2 px-3 rounded-md hover:bg-gray-100 transition-colors",
-            currentPath === "/" ? "text-blue-600 font-medium bg-blue-50" : "text-gray-700"
+            currentPath === "/" ? "text-brand-copper font-medium bg-brand-copper/5" : "text-gray-700"
           ]}
         >
           Home
@@ -78,7 +78,7 @@ const currentPath = Astro.url.pathname;
           href="/services"
           class:list={[
             "py-2 px-3 rounded-md hover:bg-gray-100 transition-colors",
-            currentPath === "/services" ? "text-blue-600 font-medium bg-blue-50" : "text-gray-700"
+            currentPath === "/services" ? "text-brand-copper font-medium bg-brand-copper/5" : "text-gray-700"
           ]}
         >
           Services
@@ -87,7 +87,7 @@ const currentPath = Astro.url.pathname;
           href="/about"
           class:list={[
             "py-2 px-3 rounded-md hover:bg-gray-100 transition-colors",
-            currentPath === "/about" ? "text-blue-600 font-medium bg-blue-50" : "text-gray-700"
+            currentPath === "/about" ? "text-brand-copper font-medium bg-brand-copper/5" : "text-gray-700"
           ]}
         >
           About
@@ -96,7 +96,7 @@ const currentPath = Astro.url.pathname;
           href="/contact"
           class:list={[
             "py-2 px-3 rounded-md hover:bg-gray-100 transition-colors",
-            currentPath === "/contact" ? "text-blue-600 font-medium bg-blue-50" : "text-gray-700"
+            currentPath === "/contact" ? "text-brand-copper font-medium bg-brand-copper/5" : "text-gray-700"
           ]}
         >
           Contact
